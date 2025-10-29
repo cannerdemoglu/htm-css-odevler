@@ -2,9 +2,6 @@
 
 ## Projeler
 
-### Blog Preview Card:
-https://github.com/cannerdemoglu/htm-css-odevler/fem-blog-preview-card-main/
-
 ### Proje yolları
 
 - Blog Preview Card: `fem-blog-preview-card-main/index.html`
