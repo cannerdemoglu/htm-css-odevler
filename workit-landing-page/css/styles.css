@@ -1,0 +1,11 @@
+:root{--bg:hsl(273,85%,12%);--accent:hsl(150,100%,63%);--text:#fff}
+body{font-family:"Manrope",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;margin:0;display:grid;grid-template-rows:auto 1fr}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 1.25rem}
+.logo{font-family:"Fraunces",serif;font-weight:700;font-size:1.25rem}
+.link{color:var(--text);text-decoration:none;border-bottom:2px solid var(--accent)}
+.hero{display:grid;place-items:center;text-align:center;padding:2rem}
+.title{font-family:"Fraunces",serif;font-weight:700;font-size:2.2rem;max-width:24ch}
+.sub{opacity:.9;max-width:52ch;margin:1rem auto 1.5rem}
+.cta{display:inline-block;background:var(--accent);color:#08110f;text-decoration:none;padding:.9rem 1.5rem;border-radius:8px;font-weight:700}
+.device{margin-top:2rem;width:min(720px,90%);height:360px;border-radius:24px;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.15),transparent 40%),radial-gradient(circle at 70% 80%,rgba(255,255,255,.08),transparent 50%),#1b1230}
+@media(min-width:900px){.title{font-size:3rem}}

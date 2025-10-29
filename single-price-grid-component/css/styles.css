@@ -1,0 +1,34 @@
+:root {
+  --bg: hsl(204, 43%, 93%);
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 52%, 53%);
+  --yellow: hsl(71, 73%, 54%);
+  --muted: hsl(218, 22%, 67%);
+}
+body {
+  font-family: "Karla", sans-serif;
+  background: var(--bg);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+.grid { display: grid; grid-template-columns: 1fr; max-width: 720px; border-radius: 10px; overflow: hidden; }
+.hero { background: var(--white); padding: 2rem; }
+.title { color: var(--cyan); font-size: 1.5rem; }
+.subtitle { color: var(--yellow); margin-top: 0.5rem; }
+.text { color: var(--muted); margin-top: 0.75rem; }
+.price { background: var(--cyan); color: var(--white); padding: 2rem; }
+.amount { margin: 0.5rem 0; }
+.big { font-size: 2rem; font-weight: 700; margin-right: 0.5rem; }
+.note { opacity: 0.9; }
+.cta { margin-top: 1rem; width: 100%; padding: 0.9rem; border: none; background: var(--yellow); color: var(--white); border-radius: 6px; font-weight: 700; }
+.why { background: var(--light-cyan); color: var(--white); padding: 2rem; }
+.list { display: grid; gap: 0.25rem; margin-top: 0.75rem; }
+@media (min-width: 800px) {
+  .grid { grid-template-columns: 1fr 1fr; grid-template-areas: "hero hero" "price why"; }
+  .hero { grid-area: hero; }
+  .price { grid-area: price; }
+  .why { grid-area: why; }
+}

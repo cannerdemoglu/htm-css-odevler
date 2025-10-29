@@ -1,0 +1,13 @@
+:root{--bg:hsl(0,0%,98%);--text:hsl(230,35%,7%);--muted:hsl(231,15%,35%);--primary:hsl(192,37%,48%);--secondary:hsl(268,34%,53%)}
+body{font-family:"Red Hat Display",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;margin:0;display:grid;grid-template-rows:auto 1fr}
+.nav{display:flex;align-items:center;justify-content:center;padding:1.25rem}
+.logo{font-weight:900;letter-spacing:1px}
+.hero{display:grid;place-items:center;text-align:center;padding:2rem}
+.title{font-size:2rem;max-width:22ch}
+.sub{color:var(--muted);max-width:56ch;margin:1rem auto 1.5rem}
+.actions{display:flex;gap:.75rem;justify-content:center}
+.cta{display:inline-block;text-decoration:none;padding:.85rem 1.25rem;border-radius:999px;font-weight:700}
+.primary{background:var(--primary);color:#fff}
+.secondary{background:var(--secondary);color:#fff}
+.mock{margin-top:2rem;width:min(900px,92%);height:320px;border-radius:20px;background:linear-gradient(135deg,rgba(0,0,0,.08),transparent),#e6e9ef}
+@media(min-width:900px){.title{font-size:3rem}}
